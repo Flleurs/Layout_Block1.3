@@ -30,6 +30,7 @@ html {
   border-radius: 20px;
   background-size: cover;
   margin: 24px 0px 24px 0px;
+  cursor: pointer;
 }
 .menu__round-icon_side-page {
   background-image: url(../images/ic_burger.svg);
@@ -217,6 +218,7 @@ html {
   background: rgb(248, 248, 248);
   margin-bottom: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .decription__read-more::before {
@@ -331,6 +333,7 @@ html {
   }
   .services__repair {
     margin-right: 65px;
+    cursor: pointer;
   }
   .services__repair::after {
     content: url("../images/ic_repair.svg");
@@ -346,6 +349,7 @@ html {
   }
   .services__checkstatus {
     margin-right: 68px;
+    cursor: pointer;
   }
   .services__checkstatus::after {
     content: url("../images/ic_checkstatus.svg");
