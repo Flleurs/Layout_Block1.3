@@ -287,7 +287,12 @@ html {
     justify-content: space-between;
     flex-direction: row;
   }
-
+  .decription__read-more {
+    margin-left: 50px;
+  }
+  .decription__read-more::before {
+    left: -25px;
+  }
   .decription__company-photo {
     width: 350px;
     border-radius: 8px;
@@ -367,6 +372,12 @@ html {
     margin-top: 0;
     margin-left: 33px;
     max-height: 190px;
+  }
+  .decription__read-more {
+    margin-left: 60px;
+  }
+  .decription__read-more::before {
+    left: -25px;
   }
   .decription__company-photo {
     width: 560px;
