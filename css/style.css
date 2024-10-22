@@ -1,0 +1,415 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.body {
+  max-width: 1120px;
+  margin: 0 auto;
+  font-family: "TTLakes", sans-serif;
+}
+
+.menu {
+  display: flex;
+  padding: 0 16px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(217, 255, 245);
+}
+.menu__container-left,
+.menu__container-right {
+  display: flex;
+  gap: 16px;
+}
+.round-icon {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-size: cover;
+  margin: 24px 0px 24px 0px;
+  cursor: pointer;
+}
+.round-icon--side-page {
+  background-image: url(../images/ic_burger.svg);
+}
+.menu__logo-img {
+  width: 97px;
+  height: 51px;
+  margin-top: 19px;
+}
+
+.menu__logo-wrapper {
+  position: relative;
+}
+
+.menu__logo-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  top: 28px;
+  right: -17px;
+  border-radius: 1px;
+  background: rgb(234, 234, 234);
+}
+.round-icon--call {
+  background-image: url(../images/ic_call.svg);
+  display: none;
+}
+.round-icon--chat {
+  background-image: url(../images/ic_chat.svg);
+  display: none;
+}
+.round-icon--profile {
+  background-image: url(../images/ic_profile.svg);
+  display: none;
+}
+
+.round-icon--repair {
+  background-image: url(../images/ic_repair.svg);
+}
+
+.round-icon--checkstatus {
+  background-image: url(../images/ic_checkstatus.svg);
+}
+
+.main {
+  background: rgb(248, 248, 248);
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__container-head {
+  display: flex;
+  align-items: center;
+}
+
+.services__title {
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(27, 28, 33);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  position: relative;
+  width: 288px;
+  height: 40px;
+  padding: 0 16px;
+}
+
+.services__title::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  background: rgb(65, 246, 215);
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.services__buttons-container {
+  display: none;
+}
+.services__navigation {
+  margin-right: 0px;
+}
+.services__list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 250%;
+  padding: 0 16px;
+}
+.services__list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.services__elems {
+  padding: 6px 16px;
+  color: rgb(126, 126, 130);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  height: 40px;
+  border: 2px solid rgb(248, 248, 248);
+}
+.services__elems:focus {
+  box-sizing: border-box;
+  border: 2px solid rgb(184, 255, 236);
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  border-style: solid;
+}
+.services__navigation::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(248, 248, 248) 16.836%,
+    rgba(248, 248, 248, 0) 100%
+  );
+  top: 170px;
+  z-index: 1;
+}
+.services__navigation::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  background: linear-gradient(
+    270deg,
+    rgb(248, 248, 248) 16.836%,
+    rgba(248, 248, 248, 0) 100%
+  );
+  top: 170px;
+}
+.decription {
+  display: flex;
+  flex-direction: column;
+}
+.description__container {
+  display: flex;
+  flex-direction: column;
+}
+.description__text {
+  max-height: 115px;
+  overflow: hidden;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.decription__company-photo {
+  width: 100%;
+}
+.decription__first-p,
+.decription__second-p {
+  color: rgb(27, 28, 33);
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+.decription__read-more {
+  color: rgb(27, 28, 33);
+  font-size: 16px;
+  font-family: "TTLakes", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-left: 32px;
+  border: none;
+  outline: none;
+  background: rgb(248, 248, 248);
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.decription__read-more::before {
+  content: url(../images/ic_expand.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -20px;
+}
+.decription__company-photo {
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    padding: 0 24px;
+  }
+  .menu__logo-wrapper::after {
+    display: none;
+  }
+  .menu__logo-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    top: 28px;
+    right: 106px;
+    border-radius: 1px;
+    background: rgb(234, 234, 234);
+  }
+  .round-icon--side-page {
+    margin: 24px 10px 24px 0px;
+  }
+  .round-icon--call {
+    display: block;
+  }
+  .round-icon--chat {
+    display: block;
+  }
+  .round-icon--profile {
+    display: block;
+    margin: 24px 26px 24px 0px;
+  }
+  .round-icon--profile::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    top: 28px;
+    right: 140px;
+    border-radius: 1px;
+    background: rgb(234, 234, 234);
+  }
+  .services {
+    padding: 0 8px;
+  }
+  .services__title::before {
+    left: -10px;
+  }
+
+  .description__text {
+    max-height: 150px;
+    margin-left: 24px;
+    margin-bottom: 10px;
+    margin-top: 16px;
+  }
+  .decription {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .decription__read-more {
+    margin-left: 50px;
+  }
+  .decription__read-more::before {
+    left: -25px;
+  }
+  .decription__company-photo {
+    width: 350px;
+    border-radius: 8px;
+    align-self: center;
+    margin: 30px 24px 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .menu {
+    display: none;
+  }
+  .services__title {
+    height: 80px;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .services__container-head {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding-top: 20px;
+  }
+  .services__buttons-container {
+    display: flex;
+    margin-right: 20px;
+    gap: 20px;
+  }
+  .services__repair,
+  .services__checkstatus {
+    border: none;
+    outline: none;
+    background-color: rgb(248, 248, 248);
+    font-family: "TTLakes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+  }
+  .services__repair {
+    cursor: pointer;
+  }
+
+  .services__repair {
+    background: url("../images/ic_repair.svg") no-repeat 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+
+  .services__checkstatus {
+    background: url("../images/ic_checkstatus.svg") no-repeat 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding-left: 15px;
+  }
+
+  .services__button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 185px;
+    height: 40px;
+  }
+
+  .services__checkstatus {
+    cursor: pointer;
+  }
+  .services {
+    padding: 0 17px;
+  }
+  .services__list {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+  }
+  .description__text {
+    margin-top: 0;
+    margin-left: 33px;
+    max-height: 190px;
+  }
+  .decription__read-more {
+    margin-left: 60px;
+  }
+  .decription__read-more::before {
+    left: -25px;
+  }
+  .decription__company-photo {
+    width: 560px;
+    border-radius: 8px;
+    margin: 16px 33px 43px 24px;
+  }
+  .services__title::before {
+    top: 20px;
+    left: -17px;
+  }
+}
